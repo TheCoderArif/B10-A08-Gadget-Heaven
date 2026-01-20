@@ -1,0 +1,129 @@
+{
+  "categories": [
+    {
+      "category_name": "Smartphones",
+      "products": [
+        {
+          "product_id": "SP001",
+          "product_title": "Galaxy X1",
+          "product_image": "https://i.ibb.co.com/p64xkjK2/shiwa-id-Uae7ou-Mw91-A-unsplash-jpg.jpg",
+          "category": "Smartphones",
+          "price": 550,
+          "description": "High-performance smartphone with AMOLED display.",
+          "Specification": ["6.5-inch AMOLED", "8GB RAM", "128GB Storage", "5000mAh Battery"],
+          "availability": true,
+          "rating": 4.6
+        },
+        {
+          "product_id": "SP002",
+          "product_title": "Pixel Nova",
+          "product_image": "https://i.ibb.co.com/dYDRYVj/shane-ryan-herilalaina-w-KYs9-nu-x-I-unsplash-jpg.jpg",
+          "category": "Smartphones",
+          "price": 620,
+          "description": "AI-powered camera smartphone.",
+          "Specification": ["6.1-inch OLED", "8GB RAM", "256GB Storage", "4500mAh Battery"],
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "SP003",
+          "product_title": "iOne Max",
+          "product_image": "https://i.ibb.co.com/B5QqNH5j/vince-picipo-QZCAh-Lhb9-FM-unsplash-jpg.jpg",
+          "category": "Smartphones",
+          "price": 780,
+          "description": "Premium smartphone with fast processor.",
+          "Specification": ["6.7-inch Retina", "12GB RAM", "256GB Storage", "4800mAh Battery"],
+          "availability": false,
+          "rating": 4.8
+        },
+        {
+          "product_id": "SP004",
+          "product_title": "Redmi Turbo",
+          "product_image": "https://i.ibb.co.com/RGjgcGHW/vince-picipo-9-M9-UGLUGj98-unsplash-jpg.jpg",
+          "category": "Smartphones",
+          "price": 410,
+          "description": "Affordable smartphone with great performance.",
+          "Specification": ["6.6-inch LCD", "6GB RAM", "128GB Storage", "5000mAh Battery"],
+          "availability": true,
+          "rating": 4.4
+        },
+        {
+          "product_id": "SP005",
+          "product_title": "OnePlus Edge",
+          "product_image": "https://i.ibb.co.com/Gg4k8wX/sameer-d-6-RLVgh-KNA-unsplash-jpg.jpg",
+          "category": "Smartphones",
+          "price": 690,
+          "description": "Fast and smooth smartphone experience.",
+          "Specification": ["6.7-inch AMOLED", "12GB RAM", "256GB Storage", "5000mAh Battery"],
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "SP006",
+          "product_title": "Vivo Spark",
+          "product_image": "https://i.ibb.co.com/4RqzmCr9/shiwa-id-F-cf-F1u-X7q-Y-unsplash-jpg.jpg",
+          "category": "Smartphones",
+          "price": 360,
+          "description": "Stylish smartphone with solid battery life.",
+          "Specification": ["6.4-inch AMOLED", "8GB RAM", "128GB Storage", "5200mAh Battery"],
+          "availability": false,
+          "rating": 4.3
+        }
+      ]
+    },
+    {
+      "category_name": "Laptops",
+      "products": [
+        {
+          "product_id": "LP001",
+          "product_title": "MacBook Air M2",
+          "product_image": "https://i.ibb.co.com/N2cTj3kD/howard-bouchevereau-RSCir-J70-NDM-unsplash-jpg.jpg",
+          "category": "Laptops",
+          "price": 1250,
+          "description": "Lightweight laptop with powerful M2 chip.",
+          "Specification": ["13.6-inch Retina", "8GB RAM", "512GB SSD", "M2 Chip"],
+          "availability": true,
+          "rating": 4.9
+        },
+        {
+          "product_id": "LP002",
+          "product_title": "Dell XPS 15",
+          "product_image": "https://i.ibb.co.com/5xSdYpnX/alex-knight-j4uu-Kn-N43-M-unsplash-jpg.jpg",
+          "category": "Laptops",
+          "price": 1400,
+          "description": "Premium Windows laptop with stunning display.",
+          "Specification": ["15.6-inch OLED", "16GB RAM", "1TB SSD", "Intel i7"],
+          "availability": true,
+          "rating": 4.8
+        }
+      ]
+    },
+    {
+      "category_name": "Accessories",
+      "products": [
+        {
+          "product_id": "AC001",
+          "product_title": "Sony WH-1000XM5",
+          "product_image": "https://i.ibb.co.com/V0g9RqfD/tomasz-gawlowski-YDZPdqv3-Fc-A-unsplash.jpg",
+          "category": "Accessories",
+          "price": 399,
+          "description": "Industry-leading noise cancelling headphones.",
+          "Specification": ["Bluetooth", "Noise Cancelling", "30-hour Battery"],
+          "availability": true,
+          "rating": 4.7
+        },
+        {
+          "product_id": "AC002",
+          "product_title": "Apple Watch Series 9",
+          "product_image": "https://i.ibb.co.com/Ngf590vQ/david-svihovec-HM-Y497t5-CU-unsplash.jpg",
+          "category": "Accessories",
+          "price": 499,
+          "description": "Advanced smartwatch with health tracking.",
+          "Specification": ["Always-On Display", "GPS", "Heart Rate Monitor"],
+          "availability": false,
+          "rating": 4.6
+        }
+      ]
+    }
+  ]
+}
