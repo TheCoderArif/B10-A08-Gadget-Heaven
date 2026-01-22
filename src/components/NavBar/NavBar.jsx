@@ -1,27 +1,45 @@
+
+import { useState } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+
 
 
 const NavBar = () => {
+
+  const [position, setPosition] = useState('home')
+
+
+  // console.log(position)
   const links = (
     <>
+      {/* <NavLink to='/'>Home</NavLink>
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to='/'>Home</NavLink> */}
+
       <li>
-        <a>Home</a>
+      <NavLink to='/' className={`${position === 'home' && 'text-white'}`} onClick={() => setPosition('home')}>Home</NavLink>
       </li>
 
       <li>
+      <NavLink to='/statistics' className={`${position === 'home' && 'text-white'}`} onClick={() => setPosition('statistics')}>Statistics</NavLink>
+      </li>
+
+      <li>
+      <NavLink to='/dashboard' className={`${position === 'home' && 'text-white'}`} onClick={() => setPosition('dashboard')}>Dashboard</NavLink>
+      </li>
+
+      {/* <li>
         <a>Statistics</a>
-      </li>
-
-      <li>
         <a>Dashboard</a>
-      </li>
+      </li> */}
     </>
   );
 
   return (
-    <div className="">
-      <div className="max-w-5xl mx-auto navbar bg-base-100 shadow-sm">
+    <div className="  ">
+      <div className={` max-w-5xl mx-auto navbar bg-base-100 shadow-sm ${position === 'home' && 'bg-violet-500'} `}>
         <div className=" navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,7 +66,7 @@ const NavBar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+          <a className = {`btn btn-ghost text-xl ${position === 'home' && 'text-white'}`}>Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -58,7 +76,7 @@ const NavBar = () => {
         <div className="navbar-end">
 
 
-          <button className="btn btn-ghost btn-circle">
+          <button className={`btn btn-ghost btn-circle ${position === 'home' && 'bg-white'}`}>
             <div className="indicator "> 
               <BsCart3 className="mt-1 mr-1 "></BsCart3>
               <span className=" badge badge-xs badge-primary indicator-item"></span>
@@ -66,7 +84,7 @@ const NavBar = () => {
           </button>
 
 
-          <button className="btn btn-ghost btn-circle">
+          <button className={`btn btn-ghost btn-circle ${position === 'home' && 'bg-white'}`}>
             <div className="indicator "> 
               <FaRegHeart className="mt-1 mr-1"></FaRegHeart>
               <span className=" badge badge-xs badge-primary indicator-item"></span>
