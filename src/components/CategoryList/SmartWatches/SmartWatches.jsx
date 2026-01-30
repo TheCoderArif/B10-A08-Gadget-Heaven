@@ -3,7 +3,7 @@
 const SmartWatches = () => {
     return (
         <div>
-            Smart Watches
+            <h1 className="font-bold">No Data Found</h1>
         </div>
     );
 };

@@ -15,6 +15,7 @@ import Accessories from './components/CategoryList/Accessories/Accessories.jsx'
 import SmartWatches from './components/CategoryList/SmartWatches/SmartWatches.jsx'
 import Macbooks from './components/CategoryList/Macbooks/Macbooks.jsx'
 import Iphones from './components/CategoryList/Iphones/Iphones.jsx'
+import ProductDetails from './components/ProductDetails/ProductDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -27,19 +28,23 @@ const router = createBrowserRouter([
         children: [
           {
             path: '/',
-            element: <AllProducts></AllProducts>
+            element: <AllProducts></AllProducts>,
+            loader: () => fetch('dataSets.json')
           },
           {
             path: '/home/laptops',
-            element: <Laptops></Laptops>
+            element: <Laptops></Laptops>,
+            loader: () => fetch('dataSets.json'),
           },
           {
             path: '/home/phones',
-            element: <Phones></Phones>
+            element: <Phones></Phones>,
+            loader: () => fetch('dataSets.json'),
           },
           {
             path: '/home/accessories',
-            element: <Accessories></Accessories>
+            element: <Accessories></Accessories>,
+            loader: () => fetch('dataSets.json'),
           },
           {
             path: '/home/smartwatches',
@@ -54,6 +59,10 @@ const router = createBrowserRouter([
             element: <Iphones></Iphones>
           },
         ]
+      },
+      {
+        path: 'products/:productId',
+        element: <ProductDetails></ProductDetails>
       },
       {
         path: '/statistics',

@@ -1,14 +1,15 @@
 
-import { useState } from "react";
+import { useContext } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { PositionContext } from "../Contexts/Contexts";
 
 
 
 const NavBar = () => {
 
-  const [position, setPosition] = useState('home')
+  const [position, setPosition] = useContext(PositionContext);
 
 
   // console.log(position)

@@ -80,7 +80,7 @@ const ItemSection = () => {
             <p className="font-bold text-2xl py-3">Explore Cutting-Edge Gadgets</p>
             <div className="grid grid-cols-4">
                 <div>
-                    <section className="border flex flex-col gap-1 items-center"> 
+                    <section className=" flex flex-col gap-1 items-center"> 
                         {/* <button className="btn btn-sm w-40 bg-violet-500 text-white">All Products</button> */}
                         {/* <button className={allProducts? ''}>All Products</button> */}
 
@@ -100,7 +100,7 @@ const ItemSection = () => {
 
                     </section>
                 </div>
-                <div className="border col-span-3"> 
+                <div className=" col-span-3"> 
 
                     <Outlet></Outlet>
 

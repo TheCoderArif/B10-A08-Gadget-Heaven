@@ -3,7 +3,7 @@
 const Iphones = () => {
     return (
         <div>
-            Iphones
+            <h1 className="font-bold">No Data Found</h1>
         </div>
     );
 };
