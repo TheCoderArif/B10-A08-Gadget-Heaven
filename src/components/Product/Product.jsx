@@ -5,6 +5,7 @@ import { PositionContext } from "../Contexts/Contexts";
 const Product = ({ product }) => {
   const [position, setPosition] = useContext(PositionContext)
   const {product_id, product_title, product_image, price } = product;
+  position
   // console.log(product);
   return (
     <div>
