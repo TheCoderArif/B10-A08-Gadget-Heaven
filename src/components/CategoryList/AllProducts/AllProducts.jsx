@@ -3,7 +3,6 @@ import Product from "../../Product/Product";
 
 const AllProducts = () => {
     const productList = useLoaderData();
-    // console.log(productList.categories[1].products);
     const allProductsList = [...productList.categories[0].products,...productList.categories[1].products, ...productList.categories[2].products]
 
     // console.log(allProductsList);

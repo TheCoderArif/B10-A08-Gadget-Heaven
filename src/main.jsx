@@ -16,6 +16,8 @@ import SmartWatches from './components/CategoryList/SmartWatches/SmartWatches.js
 import Macbooks from './components/CategoryList/Macbooks/Macbooks.jsx'
 import Iphones from './components/CategoryList/Iphones/Iphones.jsx'
 import ProductDetails from './components/ProductDetails/ProductDetails.jsx'
+import Cart from './components/Cart/Cart.jsx'
+import WishList from './components/WishList/WishList.jsx'
 
 const router = createBrowserRouter([
   {
@@ -67,11 +69,24 @@ const router = createBrowserRouter([
       },
       {
         path: '/statistics',
-        element: <Statistics></Statistics>
+        element: <Statistics></Statistics>,
+        loader: () => fetch('dataSets.json'),
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: '/dashboard/',
+            element: <Cart></Cart>,
+            loader: () => fetch('dataSets.json')
+          },
+          {
+            path: '/dashboard/wishlist',
+            element: <WishList></WishList>,
+            loader: () => fetch('dataSets.json')
+          }
+        ]
       }
     ],
     errorElement:<ErrorPage></ErrorPage>

@@ -11,12 +11,24 @@ const ProductDetails = () => {
   const [cart, setCart, wishList, setWishList] = useContext(CartWishContext)
 
   const handleCart = id => {
-    const newCart = [...cart, id]
-    setCart(newCart);
+    if (cart.includes(id)) {
+      console.log('.')
+    }
+    else {
+
+      const newCart = [...cart, id]
+      setCart(newCart);
+    }
   }
   const handleWishList = id => {
-    const newCart = [...wishList, id]
-    setWishList(newCart);
+    if (wishList.includes(id)) {
+      console.log('.')
+    }
+    else {
+
+      const newWishList = [...wishList, id]
+      setWishList(newWishList);
+    }
   }
 
   const { productId } = useParams();
@@ -58,13 +70,13 @@ const ProductDetails = () => {
         <h1 className="text-2xl font-bold">Product Details</h1>
         <p className="text-sm">
           Explore the latest gadget that will take your experience to the next
-          level. From smark devices to <br /> the coolest accessories, We have
+          level. From smart devices to <br /> the coolest accessories, We have
           it all.
         </p>
       </div>
 
       <div className="w-2/3 mx-auto ">
-        <div className="hero bg-base-200 p-4 -mt-30 bg-amber-700 rounded-2xl">
+        <div className="hero bg-base-200 p-4 -mt-30  rounded-2xl">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={product_image}
@@ -78,7 +90,7 @@ const ProductDetails = () => {
                   In Stock
                 </button>
               )}
-              <h3 className="text-sm text-gray-500 my-1 mb-3">{description}</h3>
+              <h3 className="text-sm text-gray-500 my-1 mb-3 ">{description}</h3>
               <h2 className="text-lg font-bold">Specification:</h2>
               <ol className=" text-sm text-gray-600 flex flex-col items-start my-1 mb-3">
                 {Specification.map((item) => (
