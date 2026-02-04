@@ -4,6 +4,7 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { useContext } from "react";
 import { CartWishContext } from "../Contexts/Contexts";
+import { setProductCartData, setProductWishData } from "../../Utilities/Utilities";
 
 const ProductDetails = () => {
   // const [prdct, setPrdct] = useState([]);
@@ -11,6 +12,9 @@ const ProductDetails = () => {
   const [cart, setCart, wishList, setWishList] = useContext(CartWishContext)
 
   const handleCart = id => {
+
+    setProductCartData(id)
+
     if (cart.includes(id)) {
       console.log('.')
     }
@@ -21,6 +25,9 @@ const ProductDetails = () => {
     }
   }
   const handleWishList = id => {
+
+    setProductWishData(id)
+
     if (wishList.includes(id)) {
       console.log('.')
     }

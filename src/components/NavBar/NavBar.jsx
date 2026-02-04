@@ -4,10 +4,14 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { CartWishContext, PositionContext } from "../Contexts/Contexts";
+import { getProductCartData, getProductWishData } from "../../Utilities/Utilities";
 
 
 
 const NavBar = () => {
+
+  const cartData = getProductCartData();
+  const wishData = getProductWishData();
 
   const [position, setPosition] = useContext(PositionContext);
   const [cart, setCart, wishList, setWishList] = useContext(CartWishContext);
@@ -83,7 +87,7 @@ const NavBar = () => {
             <Link to='/dashboard/'>
             <div className="indicator "> 
               <BsCart3 className="mt-1 mr-1 "></BsCart3>
-              <span className={` badge badge-xs badge-primary indicator-item ${cart.length === 0 ? 'hidden' : ''}`}> {cart.length}</span>
+              <span className={` badge badge-xs badge-primary indicator-item ${cartData.length === 0 ? 'hidden' : ''}`}> {cartData.length}</span>
             </div>
             </Link>
           </button>
@@ -93,7 +97,7 @@ const NavBar = () => {
             <Link to='/dashboard/wishlist'>
             <div className="indicator "> 
               <FaRegHeart className="mt-1 mr-1"></FaRegHeart>
-              <span className={`badge badge-xs badge-primary indicator-item ${wishList.length === 0 ? 'hidden' : ''}`}>{wishList.length}</span>
+              <span className={`badge badge-xs badge-primary indicator-item ${wishData.length === 0 ? 'hidden' : ''}`}>{wishData.length}</span>
             </div>
             </Link>
           </button>

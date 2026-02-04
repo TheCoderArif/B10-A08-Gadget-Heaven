@@ -5,7 +5,7 @@ const Statistics = () => {
 
     return (
         <div>
-            Statistics
+            {/* Statistics */}
 
            <BarC></BarC>
 
