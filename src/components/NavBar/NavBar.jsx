@@ -14,8 +14,9 @@ const NavBar = () => {
   const wishData = getProductWishData();
 
   const [position, setPosition] = useContext(PositionContext);
-  const [cart, setCart, wishList, setWishList] = useContext(CartWishContext);
-  console.log(setCart, setWishList)
+  // const [cart, setCart, wishList, setWishList] = useContext(CartWishContext);
+  // console.log(cart)
+
 
 
   // console.log(position)
